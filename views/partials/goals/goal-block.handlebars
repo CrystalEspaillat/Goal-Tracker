@@ -1,0 +1,9 @@
+<li>
+	<button class="change-state" data-id="{{id}}" data-newstate="{{done}}">
+		{{#if done}}<i class="fas fa-check"></i>{{else}}<i class="fas fa-reply"></i>{{/if}}
+	</button>
+
+	<button class="delete-goal" data-id="{{this.id}}"><i class="far fa-trash-alt"></i></button>
+
+	{{name}}
+</li>

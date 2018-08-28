@@ -1,0 +1,186 @@
+/* ///////////////////////////////////////////////// */
+/* /////////////////// Reset /////////////////////// */
+/* ///////////////////////////////////////////////// */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  height: 100vh;
+  padding-bottom: 120px;
+}
+
+/*Import Font*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+
+/*Change Font Family Everywhere*/
+body, input, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Change font sizes */
+button, li, input {
+  font-size: 12pt;
+}
+
+/* ///////////////////////////////////////////////// */
+/* /////////////////// Header ////////////////////// */
+/* ///////////////////////////////////////////////// */
+
+header {
+  width: 100%;
+  padding: 3% 2%;
+  text-align: center;
+  background: linear-gradient(#0ff0e4, #0cc0b7);
+}
+
+header h1 {
+  font-weight: 900;
+  margin: 5px 5px 20px 5px;
+}
+
+.logo {
+  color: #0cc0b7; 
+  font-size: 50pt;
+}
+
+/* ///////////////////////////////////////////////// */
+/* /////////////////// Form  ////////////////////// */
+/* ///////////////////////////////////////////////// */
+
+/*Input Field */
+#go {
+  padding: 10px;
+  border: 0px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+/* Submit Button*/
+.submit {
+  color:#0ff0e4;
+  background: #000e0e;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: 50px;
+  
+}
+
+.submit:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+/*Remove focus on form*/
+#go, .submit {
+  outline: none;
+}
+
+/* ///////////////////////////////////////////////// */
+/* //////////////// Sections //////////////////// */
+/* ///////////////////////////////////////////////// */
+
+/* Container */
+main {
+  width: 100vw;
+  display: flex;
+  background: black;
+  padding: 50px 0px;
+
+  display: flex;
+}
+
+section {
+  width: 50vw;
+  text-align: center;
+  padding: 10px;
+}
+
+section h2 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+  section {
+    width: 100vw;
+  }
+}
+
+/* ///////////////////////////////////////////////// */
+/* //////////////// Goal Blocks //////////////////// */
+/* ///////////////////////////////////////////////// */
+
+/* Goal Block*/
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 20px;
+}
+
+/*Goal Block Items*/
+li {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background: #a4eeea;
+  text-align: left;
+
+  display: flex;
+  align-items: center;
+}
+
+li button {
+  padding: 5px;
+  margin: 0px 3px;
+  width: 30px;
+  height: 30px;
+  background:#0cc0b7;
+  border: 0px;
+  border-radius: 5px;
+}
+
+li button:hover {
+  cursor: pointer;
+  background: #2dada4;
+  transform: scale(1.05);
+}
+
+/* ///////////////////////////////////////////////// */
+/* //////////////// Footer ///////////////////////// */
+/* ///////////////////////////////////////////////// */
+
+footer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  padding: 5px 15px;
+  text-align: center;
+  background: #0ff0e4;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+footer a {
+  color: #2dada4;
+  text-decoration: none;
+  font-size: 30pt;
+}
+
+footer a:hover {
+  cursor: pointer;
+  color: black; 
+}

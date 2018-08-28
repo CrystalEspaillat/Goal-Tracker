@@ -1,0 +1,42 @@
+<header>
+<i class="fas fa-check-square logo"></i> 
+<h1>GOAL BUCKET </h1>
+
+  <form class="create-form">
+    <div class="form-group">
+      <label for="go"></label>
+      <input type="text" id="go" name="name" placeholder="Type in your new goal here.">
+      <button type="submit" class="submit"><i class="fas fa-plus"></i></button>
+    </div>
+  </form>
+</header>
+
+<main>
+  <section id="right">
+    <h2>Goals</h2>
+
+    <ul>
+      {{#each goals}}
+        {{#unless done}}
+          {{> goals/goal-block done=true}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </section>
+
+  <section id="left">
+   <h2>Done</h2>
+
+    <ul>
+      {{#each goals}}
+        {{#if done}}
+          {{> goals/goal-block done=false}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <a href="https://github.com/CrystalEspaillat/Goal-Tracker"> <i class="fab fa-github"></i> </a> 
+</footer>
