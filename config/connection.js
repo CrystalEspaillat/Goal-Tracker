@@ -1,6 +1,5 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
-// var path = require("path");
 require('dotenv').config();
 
 
