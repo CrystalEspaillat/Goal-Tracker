@@ -7,7 +7,7 @@ var connection = mysql.createConnection({
   host: process.env.JAWS_DBHOST,
   port: process.env.JAWS_PORT,
   user: process.env.JAWS_USERNAME,
-  password: process.env.JAWS_PASS,
+  password: process.env.JAWS_PASSWORD,
   database: process.env.JAWS_DATABASE
 });
 
