@@ -4,11 +4,11 @@ require('dotenv').config();
 
 
 var connection = mysql.createConnection({
-  host: process.env.DATABASEHOST,
-  port: process.env.PORT,
-  user: process.env.USER,
-  password: process.env.PASS,
-  database: process.env.DATABASE
+  host: process.env.JAWS_DBHOST,
+  port: process.env.JAWS_PORT,
+  user: process.env.JAWS_USERNAME,
+  password: process.env.JAWS_PASS,
+  database: process.env.JAWS_DATABASE
 });
 
 // Make connection.
