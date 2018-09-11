@@ -1,6 +1,6 @@
 ### Schema
-CREATE DATABASE goal_db;
-USE goal_db;
+-- CREATE DATABASE goal_db;
+-- USE goal_db;
 
 CREATE TABLE goals
 (
